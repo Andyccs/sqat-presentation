@@ -1,0 +1,20 @@
+{
+  "folders":
+  [
+    {
+      "path": "./",
+      "file_exclude_patterns": [
+        "*.aux",
+        "*.log",
+        "*.toc",
+        "*.nav",
+        "*.out",
+        "*.snm"
+      ]
+    }
+  ],
+  "settings":
+  {
+    "tab_size": 2
+  },
+}

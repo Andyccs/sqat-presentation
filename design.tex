@@ -1,0 +1,38 @@
+\section{Design}
+
+\subsection{ANTLR}
+\begin{frame}
+\frametitle{ANTLR}
+
+We use ANTLR to generate a parse tree and walk the parse tree to \emph{collect software quality metrics}.
+
+\begin{definition}
+ANTLR (ANother Tool for Language Recognition) is a powerful parser generator for reading, processing, executing, or translating structured text or binary files. (Parr, 2013)
+\end{definition}
+
+It can \emph{support multiple programming languages}, as long as you define the language structure using a grammar file\footnote{Open source grammar files: https://github.com/antlr/grammars-v4}.
+
+\end{frame}
+
+\subsection{Architecture for Measurement Component}
+\begin{frame}
+\frametitle{Architecture for Measurement Component}
+
+\only<1>{
+
+Washizaki et al. (2007) proposed a framework that achieves effective measurement and evaluation of source code quality.
+
+\begin{center}
+\includegraphics[scale=0.06]{washizaki_framework}
+\end{center}
+}
+
+\only<2>{
+
+We use the proposed framework to build the measurement component of SQAT.
+
+\begin{center}
+\includegraphics[scale=0.06]{software_quality_measurement_framework}
+\end{center}
+}
+\end{frame}

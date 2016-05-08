@@ -17,74 +17,65 @@ It can \emph{support multiple programming languages}, as long as you define the 
 \subsection{Architecture for Measurement Component}
 \begin{frame}
 \frametitle{Architecture for Measurement Component}
+Washizaki et al. (2007) proposed a framework that achieves effective measurement and evaluation of source code quality.
 
-\only<1>{
-  Washizaki et al. (2007) proposed a framework that achieves effective measurement and evaluation of source code quality.
+\begin{center}
+\includegraphics[scale=0.06]{washizaki_framework}
+\end{center}
+\end{frame}
 
-  \begin{center}
-  \includegraphics[scale=0.06]{washizaki_framework}
-  \end{center}
-}
+\begin{frame}
+\frametitle{Architecture for Measurement Component}
+We use the proposed framework to build the measurement component of SQAT.
 
-\only<2>{
-  We use the proposed framework to build the measurement component of SQAT.
-
-  \begin{center}
-  \includegraphics[scale=0.06]{software_quality_measurement_framework}
-  \end{center}
-}
+\begin{center}
+\includegraphics[scale=0.06]{software_quality_measurement_framework}
+\end{center}
 \end{frame}
 
 \subsection{Overall Architecture}
 \begin{frame}
 \frametitle{Overall Architecture: Monolithic Architecture}
 
-\only<1,3>{
-  \begin{definition}
-  Monotolithic architecture is made up of multi-tier components, with components in upper tier use components in lower tier to perform some functions.
-  \end{definition}
-}
+\begin{definition}
+Monotolithic architecture is made up of multi-tier components, with components in upper tier use components in lower tier to perform some functions.
+\end{definition}
 
-\only<2>{
-  \begin{center}
-  \includegraphics[scale=0.045]{SQAT_monolithic}
-  \end{center}
-}
+The architecture has three major drawbacks:
+\begin{itemize}
+  \item Requires long-term commitment to a particular technology stack
+  \item Difficult for developers to understand the whole application
+  \item Difficult to scale an application horizontally
+\end{itemize}
+\end{frame}
 
-\only<3>{
-  The architecture has three major drawbacks:
-  \begin{itemize}
-    \item Requires long-term commitment to a particular technology stack
-    \item Difficult for developers to understand the whole application
-    \item Difficult to scale an application horizontally
-  \end{itemize}
-}
+\begin{frame}
+\frametitle{Overall Architecture: Monolithic Architecture}
+
+\begin{center}
+\includegraphics[scale=0.045]{SQAT_monolithic}
+\end{center}
 
 \end{frame}
 
 \begin{frame}
 \frametitle{Overall Architecture: Microservices}
 
-\only<1,3>{
-  \begin{definition}
-  Microservices is a software architecture style in which complex applications are composed of small, independent processes communicating with each other using language-agnostic API (Fowler, 2014).
-  \end{definition}
-}
+\begin{definition}
+Microservices is a software architecture style in which complex applications are composed of small, independent processes communicating with each other using language-agnostic API (Fowler, 2014).
+\end{definition}
 
-\only<2>{
-  \begin{center}
-  \includegraphics[scale=0.06]{microservice_architecture}
-  \end{center}
-}
+The architecture has three advantages:
+\begin{itemize}
+  \item Programming language agnostic
+  \item Easy to understand due to abstraction at service level
+  \item Easy to scale application horizontally
+\end{itemize}
+\end{frame}
 
-\only<3>{
-  The architecture has three advantages:
-  \begin{itemize}
-    \item Programming language agnostic
-    \item Easy to understand due to abstraction at service level
-    \item Easy to scale application horizontally
-  \end{itemize}
-  We use microservices to develop SQAT.
-}
-
+\begin{frame}
+\frametitle{Overall Architecture: Microservices}
+\begin{center}
+\includegraphics[scale=0.06]{microservice_architecture}
+\end{center}
 \end{frame}

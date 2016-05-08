@@ -1,4 +1,4 @@
-[![Build Status](https://www.sharelatex.com/github/repos/Andyccs/sqat-presentation/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/sqat-presentation)
+[![Build Status](https://www.sharelatex.com/github/repos/Andyccs/sqat-presentation/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/Andyccs/sqat-presentation)
 
 # SQAT Presentation Slides
 

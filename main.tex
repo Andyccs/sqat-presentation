@@ -1,10 +1,15 @@
 \documentclass{beamer}
  
 \usepackage[utf8]{inputenc}
+\usepackage{minted}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{height=5cm,compat=1.9}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
+\usepackage{multicol}
 \usetheme{Antibes}
- 
+
 %Information to be included in the title page:
 \title[SQAT]{Software Quality Analysis Tools}
 \subtitle{SCE15-0367}
@@ -12,21 +17,42 @@
 \institute[SCSE]{School of Computer Science and Engineering}
 \date[FYP, 2016]{Final Year Project Presentation, 2016}
  
- 
- 
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>
+  \frametitle{Table of Contents}
+  \begin{multicols}{2}
+  \tableofcontents[currentsubsection]
+  \end{multicols}
+  \end{frame}
+}
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+  \frametitle{Table of Contents}
+  \begin{multicols}{2}
+  \tableofcontents[currentsection]
+  \end{multicols}
+  \end{frame}
+}
+
 \begin{document}
- 
+
 \frame{\titlepage}
 
 \begin{frame}
 \frametitle{Table of Contents}
+\begin{multicols}{2}
 \tableofcontents
+\end{multicols}
 \end{frame}
  
 \include{intro}
 \include{literature}
 \include{use_cases}
 \include{design}
+\include{implementation}
 \include{references}
 
 \end{document}

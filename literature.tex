@@ -41,14 +41,51 @@ We have many software quality metrics.
 We use Goal Question Metric (GQM) to relate software quality metrics (quanlitative) to software quality attributes (quantitative).
 
 \begin{definition}
-Goal Question Metrics is a goal oriented data collection for collecting valid software engineering data.
-\end{definition}
+Goal Question Metrics is a goal oriented data collection for collecting valid software engineering data. (Basili and Weiss, 1984)
+\end{definition} \pause
 
+\begin{example}
+\begin{tabular}{ l l }
+Goal &: Analysability \\
+Question &: Are the conditional statements not deep? \\
+Metrics &: Depth of conditional nesting\\
+Score &: 90\%\\
+\end{tabular}
+\end{example}
 
 \end{frame}
 
 \subsection{Existing Tool: SonarQube}
-\begin{frame}
+\begin{frame}[allowframebreaks]
 \frametitle{Existing Tool: SonarQube}
+
+\begin{columns}
+\column{0.5\textwidth}
+SonarQube is a continuous code inspection tool. Features:
+\begin{itemize}
+  \item Object-oriented metrics
+  \item Code style checking
+  \item Code duplication detection
+  \item Custom configurations for different projects
+  \item Support 20 programming languages
+\end{itemize}
+\column{0.5\textwidth}
+\includegraphics[scale=0.1]{sonar_project_dashboard}
+\end{columns}
+
+\framebreak
+
+We do not use SonarQube because:
+\begin{itemize}
+  \item Need to develop SonarQube plug-in
+  \item Do not provide complete API to work with plug-in
+    \item Two projects with different goals
+  \begin{itemize}
+    \item Has user interface for monitoring
+    \item Do not have automation tools
+  \end{itemize}
+\end{itemize}
+
+We decided to develop SQAT from scratch.
 
 \end{frame}

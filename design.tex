@@ -15,26 +15,21 @@ It can \emph{support multiple programming languages}, as long as you define the 
 \end{frame}
 
 \subsection{Architecture for Measurement Component}
-\begin{frame}
+\begin{frame}[allowframebreaks]
 \frametitle{Architecture for Measurement Component}
 Washizaki et al. (2007) proposed a framework that achieves effective measurement and evaluation of source code quality.
 
-\begin{center}
 \includegraphics[scale=0.06]{washizaki_framework}
-\end{center}
-\end{frame}
 
-\begin{frame}
-\frametitle{Architecture for Measurement Component}
+\framebreak
+
 We use the proposed framework to build the measurement component of SQAT.
 
-\begin{center}
 \includegraphics[scale=0.06]{software_quality_measurement_framework}
-\end{center}
 \end{frame}
 
 \subsection{Overall Architecture}
-\begin{frame}
+\begin{frame}[allowframebreaks]
 \frametitle{Overall Architecture: Monolithic Architecture}
 
 \begin{definition}
@@ -47,10 +42,8 @@ The architecture has three major drawbacks:
   \item Difficult for developers to understand the whole application
   \item Difficult to scale an application horizontally
 \end{itemize}
-\end{frame}
 
-\begin{frame}
-\frametitle{Overall Architecture: Monolithic Architecture}
+\framebreak
 
 \begin{center}
 \includegraphics[scale=0.045]{SQAT_monolithic}
@@ -58,7 +51,7 @@ The architecture has three major drawbacks:
 
 \end{frame}
 
-\begin{frame}
+\begin{frame}[allowframebreaks]
 \frametitle{Overall Architecture: Microservices}
 
 \begin{definition}
@@ -71,10 +64,9 @@ The architecture has three advantages:
   \item Easy to understand due to abstraction at service level
   \item Easy to scale application horizontally
 \end{itemize}
-\end{frame}
 
-\begin{frame}
-\frametitle{Overall Architecture: Microservices}
+\framebreak
+
 \begin{center}
 \includegraphics[scale=0.06]{microservice_architecture}
 \end{center}

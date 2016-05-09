@@ -1,7 +1,7 @@
 \section{Implementation}
 
 \subsection{Code Style Configuration}
-\begin{frame}
+\begin{frame}[allowframebreaks]
 \frametitle{Code Style Configuration}
 
 The measurement component enforces some code styles:
@@ -16,20 +16,13 @@ The code style is configurable using a JSON file:
 
 \includegraphics[scale=0.37]{json_config}
 
-\end{frame}
-
-\begin{frame}
-\frametitle{Code Style Configuration}
+\framebreak
 
 \includegraphics[scale=0.37]{json_configuration_loader}
 
-\only<1>{
 Measurement component uses \textit{JsonConfigurationLoader} to convert the configuration in \textit{String} to \textit{Configuration} object.
-}
 
-\only<2>{
 We can implement the \textit{ConfigurationLoader} to support configuration XML and CSV formats.
-}
 \end{frame}
 
 \subsection{Score Calculator}

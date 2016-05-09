@@ -83,3 +83,36 @@ Washizaki et al. (2007) calculate scores based on \emph{benchmark} values and \e
 \end{columns}
 
 \end{frame}
+
+\subsection{Front-end Development}
+\begin{frame}
+\frametitle{Front-end Development}
+To enhance user experience, we built a single page application for front-end of SQAT:
+\begin{itemize}
+  \item Contents are loaded dynamically using Javascript
+  \item URL is changed to emulate traditional navigation
+\end{itemize}
+
+We uses Flux Architecture for front-end application:
+
+\begin{tikzpicture}[
+squarednode/.style={rectangle, draw=black!60, very thick, minimum size=1cm},
+]
+%Nodes
+\node[squarednode](action){Action};
+\node[squarednode](dispatcher)[right=of action]{Dispatcher};
+\node[squarednode](store)[right=of dispatcher]{Store};
+\node[squarednode](view)[right=of store]{View};
+
+\node[squarednode](action2)[above=of store]{Action};
+
+%Lines
+\draw[->] (action.east) -- (dispatcher.west);
+\draw[->] (dispatcher.east) -- (store.west);
+\draw[->] (store.east) -- (view.west);
+
+\draw[->] (view.north) -- (action2.east);
+\draw[->] (action2.west) -- (dispatcher.north);
+\end{tikzpicture}
+
+\end{frame}

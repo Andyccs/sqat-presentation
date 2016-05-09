@@ -29,28 +29,7 @@ We use the proposed framework to build the measurement component of SQAT.
 \end{frame}
 
 \subsection{Overall Architecture}
-\begin{frame}[allowframebreaks]
-\frametitle{Overall Architecture: Monolithic Architecture}
-
-\begin{definition}
-Monotolithic architecture is made up of multi-tier components, with components in upper tier use components in lower tier to perform some functions.
-\end{definition}
-
-The architecture has three major drawbacks:
-\begin{itemize}
-  \item Requires long-term commitment to a particular technology stack
-  \item Difficult for developers to understand the whole application
-  \item Difficult to scale an application horizontally
-\end{itemize}
-
-\framebreak
-
-\begin{center}
-\includegraphics[scale=0.045]{SQAT_monolithic}
-\end{center}
-
-\end{frame}
-
+\label{subsection:overall_architecture}
 \begin{frame}[allowframebreaks]
 \frametitle{Overall Architecture: Microservices}
 
@@ -64,6 +43,8 @@ The architecture has three advantages:
   \item Easy to understand due to abstraction at service level
   \item Easy to scale application horizontally
 \end{itemize}
+
+\hyperlink{appendix:monolithic}{\beamerbutton{Monolithic Architecture}}
 
 \framebreak
 
